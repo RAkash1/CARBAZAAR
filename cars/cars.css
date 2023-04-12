@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  color: #d9d9d9;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  background: #151515;
+  padding: 5px 40px;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li{
+  padding: 15px 0;
+  cursor: pointer;
+}
+nav ul li.items{
+  position: relative;
+  width: auto;
+  margin: 0 16px;
+  text-align: center;
+  order: 3;
+}
+nav ul li.items:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  height: 2px;
+  width: 100%;
+  background: red;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+nav ul li.items:hover:after{
+  opacity: 1;
+  bottom: 8px;
+}
+nav ul li.logo{
+  flex: 1;
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  transition: .4s;
+}
+nav ul li i{
+  font-size: 23px;
+}
+nav ul li.btn{
+  display: none;
+}
+nav ul li.btn.hide i:before{
+  content: '\f00d';
+}
+
+
+@media screen and (max-width: 900px){
+  nav{
+    padding: 5px 30px;
+  }
+  nav ul li.items{
+    width: 100%;
+    display: none;
+  }
+  nav ul li.items.show{
+    display: block;
+  }
+  nav ul li.btn{
+    display: block;
+  }
+}
+/*main css*/
+main{
+  height: auto;
+  background-color: #000;
+  padding: 10px;
+}
+.main{
+  background-color: #000;
+  padding: 10px;
+}
+.det img{
+  height: 400px;
+  border-radius: 10px;
+  width: 500px;
+}
+.cont{
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+.spec{
+  background-color: #f12020;
+  width: 600px;                                      
+  padding-left: 10px;
+}
+table{
+  width: auto;
+}
+tr td{
+  padding: 10px;  
+}
+td{
+  width: 100px;
+}
+.no{
+  font-size: 1.25rem;
+  text-transform: uppercase; 
+}
+.on{
+  font-size: 0.85rem;
+}
+.feed{
+  background-color: #000;
+  padding: 10px;
+  border: 2px #111;
+  border-style: solid;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1200px){
+  .main{
+    padding: 0px;
+  }
+  .det img{
+    height: 400px;
+    border-radius: 10px;
+    width: 450px;
+  }
+  .spec{
+    background-color: #f12020;
+    width:500px;                                      
+    padding-left: 10px;
+  } 
+  .spec {
+    width: auto;
+
+  } 
+  table{
+    width: 450px;
+  }
+  .cont{
+    margin: 0px;
+
+  }
+  td tr{
+    padding: 5px;
+  }
+  .no{
+    font-size: 1rem;
+  }
+  .on{
+    font-size: 0.85rem;
+  }
+  .feed{
+    margin-top: 10px;
+  }
+  }
+
+/*Footer css*/
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content::before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content::after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+.left .content .social{
+  margin: 20px 0 0 0;
+}
+.left .content .social a{
+  padding: 0 2px;
+}
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover{
+  background: #f12020;
+}
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: #f12020;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}

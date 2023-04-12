@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CAR BAZAAR</title>
+    <link rel="icon" href="../images/LOGO.webp" type="image/icon type">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+    <nav>
+      <ul>
+         <li class="logo"><b>CAR<span style="color: red;">BAZAAR</span></b></li>
+         <li class="items"><a href="../home/home.html"><b>Home</b></a></li>
+         <li class="items"><a href="../company/company.html"><b>Company</b></a></li>
+         <li class="items"><a href="../top cars/topcars.html"><b>Top Cars</b></a></li>
+         <li class="items"><a href="../feedback/feed.html"><b>Feedback</b></a></li>
+         <li class="items "><a href="../login/login.html"><b>Login</b></a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+          <main>
+            <div class="main">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'pro')" id="defaultOpen">LOGIN</button>
+              <button class="tablinks" onclick="openCity(event, 'tea')">SIGNUP</button>
+            </div>
+            
+            <div id="pro" class="tabcontent" >
+              <form action="../home/home.html" onsubmit="return myalert()">
+              <div class="in">
+                <h2 style="color: #ff0000;">EMAIL</h2>
+                <input type="email" required placeholder="email" title="please fill your email" style="height: 60px;width: 90%; border: 1px solid #222222; border-radius: 10px;font-size: 1.5rem;background-color: #111;padding: 15px;">
+                <h2 style="color: #ff0000;">PASSWORD</h2>
+                <input type="password" name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required placeholder="password" style="height: 60px;width: 90%; border-radius: 10px;font-size: 1.5rem; border: 1px solid #222222;background-color: #111;padding: 15px;">
+                <p style="margin: 20px;"><input type="checkbox">Remember Me</p>
+                <button type="submit" id="myForm" style="background-color: #ff0000; height: 50px;width: 75%; font-size: 1.5rem; border: 1px #ff0000;border-radius: 10px;">SUBMIT</button>
+              </div>
+            </form>
+            </div>
+            
+            <div id="tea" class="tabcontent">
+              <form action="../login/login.html" onsubmit="return myalertl()">
+              <div class="in">
+                <h2 style="color: #ff0000;">USER NAME</h2>
+                <input type="text"  required title="please fill your user name" placeholder="user name" style="height: 60px;width: 90%; border: 1px solid #222222; border-radius: 10px;font-size: 1.5rem;background-color: #111;padding: 15px;">
+                <h2 style="color: #ff0000;">EMAIL</h2>
+                <input type="email" required title="please fill your email" placeholder="email" style="height: 60px;width: 90%;  border: 1px solid #222222;border-radius: 10px;font-size: 1.5rem;background-color: #111;padding: 15px;">
+                <h2 style="color: #ff0000;">PASSWORD</h2>
+                <input type="password" required name="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,25}" title="Must contain at least one  number and one uppercase and lowercase letter and at least 8 to 25 characters" placeholder="password" style="height: 60px;width: 90%; border: 1px solid #222222; border-radius: 10px;font-size: 1.5rem;background-color: #111;padding: 15px;">
+                <button type="submit" style="background-color: #ff0000; height: 50px;width: 75%; font-size: 1.5rem;border: 1px #ff0000; border-radius: 10px;margin: 20px;">SUBMIT</button>
+              </div>
+            </form>
+            </div>
+            <script>
+            function openCity(evt, about) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(about).style.display = "block";
+              evt.currentTarget.className += " active";
+            }  
+          document.getElementById("defaultOpen").click();
+          var a = getElementsByClassName("hh");
+          function myalert(){
+              alert("thank you for login !!!")
+            }
+          function myalertl(){
+              alert("thank you for your signing up!!!")
+            }
+            </script>
+            </div>
+          </main>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>We are students of <a href="https://www.chitkara.edu.in/">Chitkara University</a>. We have made this website for our college project.</p>
+            <div class="social">
+              <a href="https://www.facebook.com/ChitkaraU/"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://twitter.com/ChitkaraU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fab fa-twitter"></span></a>
+              <a href="https://www.instagram.com/chitkarau/?hl=en"><span class="fab fa-instagram"></span></a>
+              <a href="https://www.youtube.com/channel/UCBxpZS0N1x_MZNPHGxUTOTw"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Chitkara University, 162-163, Madhya Marg, Sector 9C, 9C, Sector 9, Chandigarh, 160009</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">797-358-5105</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">akash0816.be20@chitkara.edu.in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

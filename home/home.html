@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CAR BAZAAR</title>
+    <link rel="icon" href="../images/LOGO.webp" type="image/icon type">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+         <li class="logo"><b>CAR<span style="color: red;">BAZAAR</span></b></li>
+         <li class="items"><a href="../home/home.html"><b>Home</b></a></li>
+         <li class="items"><a href="../company/company.html"><b>Company</b></a></li>
+         <li class="items"><a href="../top cars/topcars.html"><b>Top Cars</b></a></li>
+         <li class="items"><a href="../feedback/feed.html"><b>Feedback</b></a></li>
+         <li class="items "><a href="../login/login.html"><b>Login</b></a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+    <main>
+      <div class="top">
+            <p style="text-align:center;"><b> KNOW ABOUT YOUR FAVOURITE CAR HERE.</b></p>
+      </div>
+      <div class="main">
+        <section id="latest">
+          <h3 class="latest-heading">recommended</h2>
+            <div class="wrapper">
+              <div class="carousel owl-carousel">
+                <a href="../cars/swift.html"><div>
+                  <img src="../images/swift.webp">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">MARUTISWIFT</h4>
+                    <h3>Rs.5.73 - 8.41 Lakh*</h3><p style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div></a>
+                <a href="../cars/amaze.html">
+                <div>
+                  <img src="../images/amaze.jpg">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">HONDA AMAZE</h4>
+                    <h3>Rs.5.73 - 8.41 Lakh*</h3><p style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div></a>
+                <a href="../cars/nexon.html">
+                <div>
+                  <img src="../images/nexon.webp">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">TATA NEXON</h4>
+                    <h3>Rs.5.73 - 8.41 Lakh*</h3><p style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div></a>
+                <a href="../cars/city.html">
+                  <div>
+                  <img src="../images/city.jpg">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">HONDA CITY</h4>
+                    <h3>Rs.5.73 - 8.41 Lakh*</h3><p style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div>
+              </a>
+                <a href="../cars/ertiga.html"><div>
+                  <img src="../images/ertiga.webp">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">MARUTI ERTIGA</h4>
+                    <h3>Rs.9.73 - 10.41 Lakh*</h3><p  style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div>
+              </a>
+                <a href="../cars/thar.html"><div>
+                  <img src="../images/Thar.jpeg">
+                  <div class="cont">
+                    <h4 style="color: #ff0000;">MAHINDARA THAR</h4>
+                    <h3>Rs.5.73 - 8.41 Lakh*</h3><p  style="font-size: small;">(price in dehli)</p>
+                  </div>
+                </div>
+                </a>
+        </div>
+        </div>
+      </div>
+      <script>
+        $(".carousel").owlCarousel({
+          margin: 20,
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          responsive: {
+            0:{
+              items:1,
+              nav: false
+            },
+            600:{
+              items:2,
+              nav: false
+            },
+            1000:{
+              items:3,
+              nav: false
+            }
+          }
+        });
+      </script>
+  
+    </main>
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>We are students of <a href="https://www.chitkara.edu.in/">Chitkara University</a>. We have made this website for are college project.</p>
+            <div class="social">
+              <a href="https://www.facebook.com/ChitkaraU/"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://twitter.com/ChitkaraU?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><span class="fab fa-twitter"></span></a>
+              <a href="https://www.instagram.com/chitkarau/?hl=en"><span class="fab fa-instagram"></span></a>
+              <a href="https://www.youtube.com/channel/UCBxpZS0N1x_MZNPHGxUTOTw"><span class="fab fa-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Chitkara University, 162-163, Madhya Marg, Sector 9C, 9C, Sector 9, Chandigarh, 160009</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">797-358-5105</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">akash0816.be20@chitkara.edu.in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
